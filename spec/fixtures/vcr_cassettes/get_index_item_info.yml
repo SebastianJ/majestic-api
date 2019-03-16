@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.majestic.com/api/json?app_api_key=API_KEY&cmd=GetIndexItemInfo&datasource=historic&item0=google.com&item1=yahoo.com&items=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby Majestic API Client v1.4.0
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 16 Mar 2019 07:33:34 GMT
+      Server:
+      - Apache
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"Code":"OK","ErrorMessage":"","FullError":"","FirstBackLinkDate":"2013-05-24","IndexBuildDate":"2019-02-10
+        18:56:24","IndexType":0,"MostRecentBackLinkDate":"2018-12-24","QueriedRootDomains":2,"QueriedSubDomains":0,"QueriedURLs":0,"QueriedURLsMayExist":0,"ServerBuild":"2019-03-11
+        15:50:46","ServerName":"BRUNO28","ServerVersion":"1.0.7009.28523","UniqueIndexID":"20190210185624-HISTORICAL","DataTables":{"Results":{"Headers":{"MaxTopicsRootDomain":30,"MaxTopicsSubDomain":20,"MaxTopicsURL":10,"TopicsCount":3},"Data":[{"ItemNum":0,"Item":"google.com","ResultCode":"OK","Status":"Found","ExtBackLinks":289348199651,"RefDomains":59646501,"AnalysisResUnitsCost":289348199651,"ACRank":-1,"ItemType":1,"IndexedURLs":30425454562,"GetTopBackLinksAnalysisResUnitsCost":5000,"DownloadBacklinksAnalysisResUnitsCost":319773654213,"DownloadRefDomainBacklinksAnalysisResUnitsCost":1192980020,"RefIPs":5744686,"RefSubNets":681057,"RefDomainsEDU":106172,"ExtBackLinksEDU":1766201785,"RefDomainsGOV":55795,"ExtBackLinksGOV":814594606,"RefDomainsEDU_Exact":8758,"ExtBackLinksEDU_Exact":445133442,"RefDomainsGOV_Exact":6085,"ExtBackLinksGOV_Exact":173406157,"CrawledFlag":"False","LastCrawlDate":"","LastCrawlResult":"","RedirectFlag":"True","FinalRedirectResult":"","OutDomainsExternal":"0","OutLinksExternal":"0","OutLinksInternal":"0","OutLinksPages":"1770830247","LastSeen":"","Title":"Google","RedirectTo":"https://www.google.com/","Language":"en,de","LanguageDesc":"English,German","LanguageConfidence":"93,70","LanguagePageRatios":"77.8,1.6","LanguageTotalPages":372291317,"RefLanguage":"en,es,fr,de,it,ru,pt,ja","RefLanguageDesc":"English,Spanish/Castilian,French,German,Italian,Russian,Portuguese,Japanese","RefLanguageConfidence":"95,75,74,77,71,70,85,84","RefLanguagePageRatios":"57.5,2.9,2.7,2.7,0.9,0.4,0.1,0.1","RefLanguageTotalPages":125927874496,"CrawledURLs":2785142737,"RootDomainIPAddress":"108.177.12.102","TotalNonUniqueLinks":"311021823116","NonUniqueLinkTypeHomepages":"824080207","NonUniqueLinkTypeIndirect":"3869955676","NonUniqueLinkTypeDeleted":"139534904357","NonUniqueLinkTypeNoFollow":"41397286377","NonUniqueLinkTypeProtocolHTTPS":"61634346765","NonUniqueLinkTypeFrame":"13797514536","NonUniqueLinkTypeImageLink":"59680074295","NonUniqueLinkTypeRedirect":"3253567189","NonUniqueLinkTypeTextLink":"234290667096","RefDomainTypeLive":"30485745","RefDomainTypeFollow":"56930645","RefDomainTypeHomepageLink":"28764954","RefDomainTypeDirect":"58597484","RefDomainTypeProtocolHTTPS":"10762896","CanonicalURL":"","CitationFlow":100,"TrustFlow":99,"TrustMetric":99,"TopicalTrustFlow_Topic_0":"Computers/Internet/Searching","TopicalTrustFlow_Value_0":93,"TopicalTrustFlow_Topic_1":"Computers/Software","TopicalTrustFlow_Value_1":92,"TopicalTrustFlow_Topic_2":"Computers/Internet/On
+        the Web","TopicalTrustFlow_Value_2":91},{"ItemNum":1,"Item":"yahoo.com","ResultCode":"OK","Status":"Found","ExtBackLinks":20923877357,"RefDomains":7580170,"AnalysisResUnitsCost":20923877357,"ACRank":-1,"ItemType":1,"IndexedURLs":2615319296,"GetTopBackLinksAnalysisResUnitsCost":5000,"DownloadBacklinksAnalysisResUnitsCost":23539196653,"DownloadRefDomainBacklinksAnalysisResUnitsCost":151653400,"RefIPs":1762509,"RefSubNets":361610,"RefDomainsEDU":33559,"ExtBackLinksEDU":116619205,"RefDomainsGOV":13739,"ExtBackLinksGOV":41448435,"RefDomainsEDU_Exact":4606,"ExtBackLinksEDU_Exact":12032494,"RefDomainsGOV_Exact":2082,"ExtBackLinksGOV_Exact":29634468,"CrawledFlag":"False","LastCrawlDate":"","LastCrawlResult":"","RedirectFlag":"True","FinalRedirectResult":"","OutDomainsExternal":"0","OutLinksExternal":"0","OutLinksInternal":"1","OutLinksPages":"150014257","LastSeen":"","Title":"Yahoo","RedirectTo":"https://www.yahoo.com/","Language":"en,zh,de,es,fr,ko,pt,ru,it","LanguageDesc":"English,Chinese,German,Spanish/Castilian,French,Korean,Portuguese,Russian,Italian","LanguageConfidence":"98,81,89,93,92,80,96,84,87","LanguagePageRatios":"78.5,13.4,2.1,0.9,0.7,0.6,0.5,0.4,0.2","LanguageTotalPages":8647429,"RefLanguage":"en,zh,de,fr,es,ko,it,pt,ru,tr","RefLanguageDesc":"English,Chinese,German,French,Spanish/Castilian,Korean,Italian,Portuguese,Russian,Turkish","RefLanguageConfidence":"97,87,83,81,82,89,77,89,68,95","RefLanguagePageRatios":"49.3,28.1,5.1,2.3,2.2,1.2,0.8,0.2,0.2,0.2","RefLanguageTotalPages":4611973766,"CrawledURLs":193707908,"RootDomainIPAddress":"98.136.96.140","TotalNonUniqueLinks":"22868440721","NonUniqueLinkTypeHomepages":"2305846332","NonUniqueLinkTypeIndirect":"351768685","NonUniqueLinkTypeDeleted":"15001146154","NonUniqueLinkTypeNoFollow":"3138547621","NonUniqueLinkTypeProtocolHTTPS":"1424187134","NonUniqueLinkTypeFrame":"274495886","NonUniqueLinkTypeImageLink":"5458516723","NonUniqueLinkTypeRedirect":"423240613","NonUniqueLinkTypeTextLink":"16712187499","RefDomainTypeLive":"3031021","RefDomainTypeFollow":"6456110","RefDomainTypeHomepageLink":"2282203","RefDomainTypeDirect":"7338114","RefDomainTypeProtocolHTTPS":"745493","CanonicalURL":"","CitationFlow":91,"TrustFlow":94,"TrustMetric":94,"TopicalTrustFlow_Topic_0":"Computers/Internet/Searching","TopicalTrustFlow_Value_0":85,"TopicalTrustFlow_Topic_1":"Computers/Internet/On
+        the Web","TopicalTrustFlow_Value_1":84,"TopicalTrustFlow_Topic_2":"Reference/Ask
+        an Expert","TopicalTrustFlow_Value_2":81}]}}}'
+    http_version: 
+  recorded_at: Sat, 16 Mar 2019 07:33:34 GMT
+recorded_with: VCR 4.0.0
