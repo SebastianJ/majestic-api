@@ -9,6 +9,7 @@ RSpec.describe Majestic::Api::Client do
     let(:first_item_info) { item_info.parsed_items.first }
     
     it { expect(item_info).to be_a_kind_of Majestic::Api::ItemInfoResponse}
+    it { expect(first_item_info).to be_a_kind_of Hash}
     
     expectations = {
       "ItemNum"=>0,
