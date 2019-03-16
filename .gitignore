@@ -17,4 +17,4 @@
 
 credentials.yml
 .ruby-version
-.ruby-gemset
+.ruby-gemset.DS_Store
