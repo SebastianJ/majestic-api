@@ -14,10 +14,10 @@ module Majestic
       
     	def set_api_url(format = :json)
         self.api_url          =   case self.configuration.environment.to_sym
-          when :sandbox     then "http://developer.majestic.com/api/#{format}"
-          when :production  then "http://api.majestic.com/api/#{format}"
+          when :sandbox     then "https://developer.majestic.com/api/#{format}"
+          when :production  then "https://api.majestic.com/api/#{format}"
           else
-            "http://developer.majestic.com/api/#{format}"
+            "https://developer.majestic.com/api/#{format}"
         end
       end
 
